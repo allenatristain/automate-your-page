@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+
+
+    <title>A Pen by  Allen Atristain</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <!DOCTYPE html>
+
+<!--These are my notes for the Udacity Introduction to Programming Nanodegree-->
+
+<head>  
+<title>Allen's Notes</title>
+<link rel="stylesheet" href="style.css">    
+</head>
+
+<body>
+
+<h1> Table of Contents</h1>
+  
+<h3>Stage 1 Lessons</h3>
+  
+<ul>
+  <li><a href="#lesson-1-1">Lesson 1: The Basics of the Web and HTML</a>
+    <ul>  
+      <li><a href="#lesson-1-1-1"> Basic Idea of the Web and How it Works</a></li>
+      <li><a href="#lesson-1-1-2"> Computers are Stupid and Effective</a></li>
+      <li><a href="#lesson-1-1-3"> HTML and HTML Elements</a></li>
+      <li><a href="#lesson-1-1-4"> Types of Tags</a></li>
+      <li><a href="#lesson-1-1-5"> Element and Tag Lingo</a></li>  
+    </ul>
+  </li>  
+  <li><a href="#lesson-1-2">Lesson 2: Creating Structure in a HTML Document</a>
+    <ul>  
+      <li><a href="#lesson-1-2-1"> Web Development Languages</a></li>
+      <li><a href="#lesson-1-2-2"> The Structure of Web Pages</a></li>
+      <li><a href="#lesson-1-2-3"> Translating a Web Page Design into Code</a></li>
+    </ul>
+  </li>
+  <li><a href="#lesson-1-3">Lesson 3: Adding CSS Style to HTML Structure</a>
+    <ul>
+      <li><a href="#lesson-1-3-1"> Importance of Avoiding Repetition</a></li>
+      <li><a href="#lesson-1-3-2"> CSS Styling Lingo</a></li>
+      <li><a href="#lesson-1-3-3"> Adding CSS styling to a HTML Document</a></li>
+    </ul>
+  </li>
+</ul>  
+  
+<h3>Stage 2 Lessons</h3>
+  
+<ul>  
+  <li><a href="#lesson-2-1">Lesson 1: Introduction to Serious Programming</a>
+    <ul>
+      <li><a href="#lesson-2-1-1"> What are Computers?</a></li>
+      <li><a href="#lesson-2-1-2"> What are Programs?</a></li>
+      <li><a href="#lesson-2-1-3"> More about Python</a></li>
+      <li><a href="#lesson-2-1-4"> Programming Languages vs. Natural Languages</a></li>
+      <li><a href="#lesson-2-1-5"> Grammar in Programming Languages</a></li>
+      <li><a href="#lesson-2-1-5"> Commands and Functions in Python</a></li>
+    </ul>
+  </li>
+  <li><a href="#lesson-2-2">Lesson 2: Variables and Strings</a>
+    <ul>
+      <li><a href="#lesson-2-2-1"> Variables in Python</a></li>
+      <li><a href="#lesson-2-2-2"> The meaning of the "=" sign in Python</a></li>
+      <li><a href="#lesson-2-2-3"> Python Lingo</a></li>
+    </ul>
+  </li>
+  <li><a href="#lesson-2-3">Lesson 3: Input --> Function --> Output</a>
+    <ul>
+      <li><a href="#lesson-2-3-1"> Functions in Python</a></li>
+      <li><a href="#lesson-2-3-2"> Making a Function in Python</a></li>
+    </ul>
+  </li>
+  <li><a href="#lesson-2-4">Lesson 4: Control Flow & Loops</a>
+    <ul>
+      <li><a href="#lesson-2-4-1"> Making Decisions and Complex Programs</a></li>
+      <li><a href="#lesson-2-4-2"> Making Comparisons in Python</a></li>
+      <li><a href="#lesson-2-4-3"> If statements</a></li>
+      <li><a href="#lesson-2-4-4"> Max and Or Operators</a></li>
+      <li><a href="#lesson-2-4-5"> Loops</a></li>
+    </ul>
+  </li>
+  <li><a href="#lesson-2-5">Lesson 5: Debugging</a>
+    <ul>
+      <li><a href="#lesson-2-5-1"> Bugs Happen and that's OK!!</a></li>
+      <li><a href="#lesson-2-5-2"> Guide to Debugging</a></li>
+    </ul>
+  </li>
+  <li><a href="#lesson-2-6">Lesson 6: Lists & For Loops</a>
+    <ul>
+      <li><a href="#lesson-2-6-1"> Lists</a></li>
+      <li><a href="#lesson-2-6-2"> Mutations</a></li>
+      <li><a href="#lesson-2-6-3"> Lists Lingo</a></li>
+      <li><a href="#lesson-2-6-4"> List Operations</a></li>
+      <li><a href="#lesson-2-6-5"> For Loops</a></li>
+    </ul>
+  </li>
+  <li><a href="#lesson-2-7">Lesson 7: How to Solve Problems</a>
+    <ul>
+      <li><a href="#lesson-2-7-1"> What do Problems Have in Common?</a></li>
+      <li><a href="#lesson-2-7-2"> Rules to Help Solve Problems</a></li>
+    </ul>
+  </li>
+</ul>  
+  
+<h1>Stage 1 Notes</h1>
+
+<div class="lesson">
+  <h2 id="lesson-1-1">Lesson 1: The Basics of the Web and HTML </h2> 
+  <div class="concept">
+    <div class="concept-title" id="lesson-1-1-1">
+    Basic Idea of the Web and How it Works
+    </div>
+    <div class="concept-description">
+        <p>  
+        The main components of the web are <em>computers, web browsers, servers, internet, content,</em> and <em>HTTP</em>. 
+        The web is the entire collection of interconnected computers and servers which communicate with each other via a protocol known as HTTP.  
+        When an individual user visits a web page, the user’s web browser makes a <em>HTTP request</em>, which is sent over the internet, 
+        to the server hosting the appropriate <em>HTML document</em>. The server then sends back the HTML document to the user’s computer, 
+        which is then interpreted and displayed by the user’s web browser.
+        </p> 
+    </div>
+  </div>
+  <div class="concept">
+    <div class="concept-title" id="lesson-1-1-2">
+    Computers are Stupid and Effective
+    </div>
+    <div class="concept-description">
+        <p>
+        Computers are able to perform tasks which are encoded via a <em>computer language</em> such as HTML. 
+        While able to perform complex tasks more effectively than humans, any little error in the code 
+        can have huge problems and prevent the code from performing the desired task. 
+        Computers read code literally with no room for interpretation or understanding.
+        </p>  
+    </div>
+  </div>
+  <div class="concept">
+    <div class="concept-title" id="lesson-1-1-3">
+    HTML and HTML Elements
+    </div>
+    <div class="concept-description">
+        <p>
+        This first lesson detailed some of the key points of HTML, otherwise known as <em>HyperText Markup Language.</em> 
+        HTML documents comprise the majority of the content on the internet. 
+        HTML documents contain <em>text content</em>, which is the content seen by users, and <em>markup</em>, 
+        which controls how the text content looks. Each HTML document is comprised of <em>HTML elements</em>. 
+        These elements come in different sorts and are determined via <em>tags</em>.
+        </p>
+    </div>
+  </div>
+  <div class="concept">
+    <div class="concept-title" id="lesson-1-1-4">
+    Types of Tags
+    </div>
+    <div class="concept-description">  
+        <p>
+        <b>“B” tag</b> - Makes the text content bold. <br>
+        <b>“M” tag</b> - Makes the text content initialized. <br>
+        <b>“Break” tag</b> - Makes an one line break, has no closing tag. <br>
+        <b>“Paragraph” tag</b> - Creates an "invisible box" around the text content. <br>
+        <b>“Anchor” tag</b> - Makes a link to another page. <br>  
+        <b>“Img” tag</b> - Tags an image.<br>
+        <b>"Div" tag"</b> - Makes a box around content which allows for markup of the content.<br>
+        <b>"Span" tag</b> - Allows for markup of a single line of element.
+        </p>
+    </div>
+  </div>
+  <div class="concept">
+    <div class="concept-title" id="lesson-1-1-5">
+    Element and Tag Lingo
+    </div>
+    <div class="concept-description">
+        <p>
+        <b>Inline/Block</b>- Elements come in either sort. Block 
+        elements make an "invisible box" around text content and can have a determinable height and length.<br>
+        <b>Void Tag</b> - A tag with no closing tag.
+        </p>
+    </div>  
+  </div>
+</div>
+
+<div class="lesson" id="lesson-1-2"> 
+  <h2>Lesson 2: Creating Structure in a HTML Document</h2>
+  <div class="concept">
+    <div class="concept-title" id="lesson-1-2-1">
+    Web Development Languages
+    </div>
+    <div class="concept-description">
+        <p>
+        There are three languages used for web page development, <em>HTML</em>, <em>Java</em>, and <em>CSS</em>. 
+        HTML gives structure and content to a page. CSS, otherwise known as <em>Cascading Style Sheets</em>, gives style to the page elements, such as
+        font size, text color, background, position, border, and etc. Java gives the web page an interactive element.  
+        While not obvious at first, every web page on the internet is comprised of boxes.
+        Boxes are defined with the "Div" tag. To add style to each box, give each element a class attribute.   
+        </p>
+    </div>
+  </div>
+  <div class="concept">
+    <div class="concept-title" id="lesson-1-2-2">
+    The Structure of Web Pages
+    </div>
+    <div class="concept-description">
+        <p>
+        To see the structure of a web page, in Google Chrome use "Developer tools." What is shown is the structure of the 
+        web page as interpreted by the web browser. Generally speaking, the structure shown is described as a tree structure.
+        This is because HTML elements can have other elements nested inside them, and so on and so forth. 
+        When examining a web page's code, all the code within the page can be modeled in a <em>Document Object Model</em> 
+        (DOM), which is a tree-like structure of a page's code. A good summary about <em>tree structures</em> can be found 
+        <a href="http://en.wikipedia.org/wiki/Tree_(data_structure)">here.</a>
+        More information about DOMs can be found <a href="http://en.wikipedia.org/wiki/Document_Object_Model">here.</a>  
+        </p>
+    </div>
+  </div>
+  <div class="concept">
+    <div class="concept-title" id="lesson-1-2-3">
+    Translating a Web Page Design into Code
+    </div>
+    <div class="concept-description">
+        <p>
+        Since every web page is comprised of boxes, start by <em>Boxify</em> a web page design, going from big boxes to small boxes. 
+        Boxes can exist within other boxes. The same web page design can be boxifed in different ways. 
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="lesson" id="lesson-1-3"> 
+  <h2>Lesson 3: Adding CSS Style to HTML Structure</h2> 
+  <div class="concept">
+    <div class="concept-title" id="lesson-1-3-1">
+    Importance of Avoiding Repetition
+    </div>
+    <div class="concept-description">
+        <p>
+        It's a good habit to <em>avoid repetition of code</em> whenever possible. This makes your code easier to read and reduces the chances of errors.
+        As an example, when using lots of repetition of styling code, it not only means a greater chance of error, but makes it more difficult to make markup changes to all desired elements. To make a simple markup change, instead of changing a small amount of code in the CSS file, you would have to change the CSS code in each one of the desired elements. This in turn leads to a greater chance of error if some of the elements are missed or incorrectly modified. Why make your coding experience harder?!? 
+        </p>
+    </div>
+  </div>
+  <div class="concept">
+    <div class="concept-title" id="lesson-1-3-2">
+    CSS Styling Lingo
+    </div>
+    <div class="concept-description">
+        <p>
+        <b>Selector </b> - Term used to select all elements of a particular sort in a HTML document.<br>  
+        <b>Class Selectors</b> - Term used to select only a certain elements of a particular sort in a HTML document.   
+        </p>
+    </div>
+  </div>
+  <div class="concept">
+    <div class="concept-title" id="lesson-1-3-3">
+    Adding CSS styling to a HTML Document
+    </div>
+    <div class="concept-description">
+        <p>
+        There are several ways to add CSS styling code to a structured HTML document:<br>
+        <p>1) Write the CSS styling code in a "Style" tag nested in the “Head” tag of the HTML document. This is fine for very small projects.
+        </p>
+        <p>2) Link the HTML document to a separate CSS file. Both files are placed in the same project folder. Helps keep organization for larger projects. A “Head” tag is placed at the top of the HTML document with a "Link" tag inside. 
+        </p>
+        <p>3) Adding CSS styling in line with the HTML code. Very bad idea, leads to lots of repetition of styling code, more chances for errors in code.
+        </p>  
+    </div>
+  </div>
+</div>
+
+<h1>Stage 2 Notes</h1>
+  
+<div class="lesson">
+  <h2 id="lesson-2-1">Lesson 1: Introduction to Serious Programming </h2>
+  <div class="concept">
+    <div class="concept-title" id="lesson-2-1-1">
+    What are Computers?  
+    </div>
+    <div class="concept-description">
+      <p>
+      An universal machine, that can be <em>programmed</em> to do almost anything. 
+      Whatever we can write a program for can be done by a computer. Originally, 
+      computers were thought to only be useful for mathematical calculations, 
+      only later were they used for other applications. 
+      </p>
+    </div>
+  </div>  
+  <div class="concept">
+    <div class="concept-title" id="lesson-2-1-2">
+    What are Programs?  
+    </div>
+    <div class="concept-description">
+      <p>
+      A precise sequence of steps or instructions that tell the computer what to do.
+      Programs are written by programmers via a <em>programming language </em> such as Python. 
+      </p>
+    </div>
+  </div>  
+  <div class="concept">
+    <div class="concept-title" id="lesson-2-1-3">
+    More about Python  
+    </div>
+    <div class="concept-description">
+      <p>
+      Python is one of many different programming languages, each with different applications, 
+      and with its own particular <em>grammar</em>, and <em>commands</em>.
+      </p>
+    </div>
+  </div> 
+  <div class="concept">
+    <div class="concept-title" id="lesson-2-1-4">
+    Programming Languages vs. Natural Languages  
+    </div>
+    <div class="concept-description">
+      <p>
+      Programming languages were invented because of shortcomings of natural languages, <em>ambiguity</em>, and <em>verbosity</em>. 
+      Natural languages are often ambiguous were the same sentence or word can have different meanings. We want the computer to interpret the 
+      code written to be exactly as intended by the programmer. Natural languages are also very verbose, aka wordy. 
+      To write a program for a complex task in a natural language would require a lot of text. While the same task in a computer language 
+      may only take a few lines of code. 
+      </p>
+    </div>
+  </div>
+  <div class="concept">
+    <div class="concept-title" id="lesson-2-1-5">
+    Grammar in Programming Languages    
+    </div>
+    <div class="concept-description">
+      <p>
+      Like natural languages, programming languages have a <em>grammar</em> that allow programmers to form “valid” sentences and 
+      defines what <em>strings</em> are possible in the given programming language. Python's grammar is much stricter than natural 
+      language grammar. Python requires code be written with a very specific <em>syntax</em> or grammar. Code must match the 
+      Python grammar exactly, otherwise "bugs" or errors would arise.
+      </p>
+    </div>
+  </div>
+  <div class="concept">
+    <div class="concept-title" id="lesson-2-1-6">
+    Commands and Functions in Python
+    </div>
+    <div class="concept-description">
+      <p>
+      <b>Print</b> - A command that prints outs the result of a string of code.<br>
+      <b>#</b> - These are comments in Python, and ignored by the Python interpreter.<br>
+      <b>Find</b> - Function gives the position, via a number, of the target string in the search string. 
+      If the target string is not found in the search string, the output will be -1.<br>
+      <b>Indexing</b> - Function that extract parts from a target string.<br>
+      </p>
+    </div>
+  </div> 
+</div>
+
+<div class="lesson">
+  <h2 id="lesson-2-2">Lesson 2: Variables and Strings</h2>
+  <div class="concept">
+    <div class="concept-title" id="lesson-2-2-1">
+    Variables in Python  
+    </div>
+    <div class="concept-description">
+      <p>
+      In Python, <em>variables</em> refer to the process were Programmers assign a <em>name</em> to a <em>value</em>.
+      This is done through a <em>variable assignment</em>. The use of variables makes code easier to read, and allows for easier changes in values.  
+      A variable can also refer to an assignment of a name to a <em>string</em>, and <em>expression</em>. As a convention, variable names should be in lowercase. 
+      </p>
+    </div>
+  </div>  
+  <div class="concept">
+    <div class="concept-title" id="lesson-2-2-2">
+    The meaning of the "=" sign in Python  
+    </div>
+    <div class="concept-description">
+      <p>
+      The equal sign, "=" has a very different meaning in Python and many other programming languages. Unlike in Mathematics, where the equl sign means "equality,"
+      in Python the equal sign means "to be assigned to." 
+      </p>
+    </div>
+  </div>  
+  <div class="concept">
+    <div class="concept-title" id="lesson-2-2-3">
+    Python Lingo  
+    </div>
+    <div class="concept-description">
+      <p>
+      <b>String</b> - A sequence of characters.<br>
+      <b>Subsequence</b> - String taken from an original string
+      </p>
+    </div>
+  </div>      
+</div>  
+
+<div class="lesson">
+  <h2 id="lesson-2-3">Lesson 3: Input --> Function --> Output</h2>
+  <div class="concept">
+    <div class="concept-title" id="lesson-2-3-1">
+    Functions in Python  
+    </div>
+    <div class="concept-description">
+      <p>
+      Conceptually, <em>functions</em> work in programming in a manner similar in Mathematics. A function takes in an <em>input</em>, performs an operation, 
+      and delivers an <em>output</em>. There can be any number of inputs in a function, but the number of inputs has to agree with the expected number in the procedure. 
+      Inputs are also called <em>operands</em>, and <em>arguments</em>. 
+      </p>
+    </div>
+  </div>      
+  <div class="concept">
+    <div class="concept-title" id="lesson-2-3-2">
+    Making a Function in Python 
+    </div>
+    <div class="concept-description">
+      <p>
+      Functions in Python are started with the word <em>def</em>. The function is then given a name followed by <em>parameters</em> in parentheses. 
+      The parameters are the inputs for the function and are later replaced by actual values when the function is used. The operation of the function is signaled 
+      by the keyword <em>return</em> which tells Python what to produce as an output. If a return statement is omitted from the function, the function will produce a "None"
+      as an output. 
+      </p>
+    </div>
+  </div>    
+</div>  
+
+<div class="lesson">
+  <h2 id="lesson-2-4">Lesson 4: Control Flow & Loops</h2>
+  <div class="concept">
+    <div class="concept-title" id="lesson-2-4-1">
+    Making Decisions and Complex Programs  
+    </div>
+    <div class="concept-description">
+      <p>
+      To make programs of greater complexity and usefulness, we need to incorporate the use of <em>arithmetic</em>, <em>if statements</em>, <em>loops</em>, <em>comparisons</em>, and <em>procedures</em>. With these we're able to write code that will behave differently based on decisions. We can also use these to simulate any other computer program.
+      </p>
+    </div>
+  </div>      
+  <div class="concept">
+    <div class="concept-title" id="lesson-2-4-2">
+    Making Comparisons in Python 
+    </div>
+    <div class="concept-description">
+      <p>
+      To make comparisons in Python, the <em>operators</em> are used. When making comparisons between values, the output given by Python is a <em>Boolean value</em>, which is either the value "True" or "False."
+      </p>
+    </div>
+  </div>
+  <div class="concept">
+    <div class="concept-title" id="lesson-2-4-3">
+    If statements 
+    </div>
+    <div class="concept-description">
+      <p>
+      By using comparisons, we can make decisions in Python through the use of if statements. To start an if statement, we start with the keyword “if” followed by a <em>test expression</em>. The indented <em>block</em> is the code the function will execute if the comparison is true. If the test expression is not true, then the block will not execute. The end of the if statement is signaled by indentation. The next statement that is not indented will run regardless whether or not the test expression is true.  
+      </p>
+    </div>
+  </div>
+  <div class="concept">
+    <div class="concept-title" id="lesson-2-4-4">
+    Max and Or Operators 
+    </div>
+    <div class="concept-description">
+      <p>
+      The <em>or operator</em> can sometimes be used in place of an if statement. The output given by the or operator will be a Boolean value. If the first expression evaluates to true, the value of the or expression is true and the second expression is not evaluated. If the first expression evaluates to false, the value of the or expression is taken from the value of the second expression.<br><br> 
+        
+      The <em>Max operator</em> returns the largest number from a set.
+      </p>
+    </div>
+  </div>
+  <div class="concept">
+    <div class="concept-title" id="lesson-2-4-5">
+    Loops 
+    </div>
+    <div class="concept-description">
+      <p>
+        Loops allows the coder to do things over and over again. <em>While loops</em> have both a test expression and indented block. If the test expression is true, the function will execute the block. This process is "looped" over and over again so long the test expression evaluates to true. 
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="lesson">
+  <h2 id="lesson-2-5">Lesson 5: Debugging</h2>
+  <div class="concept">
+    <div class="concept-title" id="lesson-2-5-1">
+    Bugs Happen and that's OK!!   
+    </div>
+    <div class="concept-description">
+      <p>        
+      Bug are an inevitable part of programming for programmers of all skill levels. Instead of trying to avoid bugs entirely, a programmer should develop a strategy, or mental model to systematically get rid of them. <br><br>
+        
+      Debugging is more than just correcting errors and learning how you made a mistake. It's a scientific process in examining code to discover things you didn't expect in it. Being able to find errors is a big part to writing software.   
+      </p>
+    </div>
+  </div>      
+  <div class="concept">
+    <div class="concept-title" id="lesson-2-5-2">
+    Guide to Debugging 
+    </div>
+    <div class="concept-description">
+      <p>
+      <b>Traceback Messages</b>- When a program crashes. Usually an error message called a <em>traceback</em> is given by Python. The traceback tells you what line the code crashed on and what file it was running.<br><br>
+      <b>Example Code</b>- If working example code is available use the example code as a base and step by step make the changes until you arrive to the result you wanted. Then compare your new code with your original code to see where the original code had the bug.<br><br>
+      
+      <b>Keep Old Version</b>- Keeping old versions of your code allows you to compare and share your code with others who can help you find the bug.<br><br>
+      
+      <b>Print Statements</b>- Adding print statements to your program can show where in the code the program begins to misbehave. Thus allowing you to pin point the location of the bug.
+      </p>
+    </div>
+  </div>
+</div> 
+
+<div class="lesson">
+  <h2 id="lesson-2-6">Lesson 6: Lists & For Loops</h2>
+  <div class="concept">
+    <div class="concept-title" id="lesson-2-6-1">
+    Lists
+    </div>
+    <div class="concept-description">
+      <p>        
+      Lists are a type of <em>structured data</em> that let us organize information. The list is identified by square brackets, and the elements are separated by commas. The elements could be strings, numbers, characters, other lists.    
+      </p>
+    </div>
+  </div>      
+  <div class="concept">
+    <div class="concept-title" id="lesson-2-6-2">
+    Mutations 
+    </div>
+    <div class="concept-description">
+      <p>
+      Lists support <em>mutation</em>, which allows the coder to change the value of list after it has been created. Whenever the value of an element is changed, the list is being modified, nor is a new list created.   
+      </p>
+    </div>
+  </div>
+  <div class="concept">
+    <div class="concept-title" id="lesson-2-6-3">
+    Lists Lingo 
+    </div>
+    <div class="concept-description">
+      <p>
+      <b>Aliasing</b>-When two variables refer to the same object.  
+      </p>
+    </div>
+  </div> 
+  <div class="concept">
+    <div class="concept-title" id="lesson-2-6-4">
+    List Operations
+    </div>
+    <div class="concept-description">
+      <p>
+      <b>Append</b>-Adds a new element to the end of the list by mutating the old list.<br><br>
+      
+      <b>Plus</b>-Produces a new list by the adding the elements from two old lists. Does not mutate old lists.<br><br>
+        
+      <b>Len</b>-Returns the length, or number of elements in a list. Also works on strings or any object that is a collection of things.<br><br>
+      
+      <b>Index</b>-Returns the first position where a value is located in a list. If not found, produces an error.<br><br>    
+        
+      <b>In</b>-If a value is in the inquired list, returns true. Otherwise returns false.<br><br>    
+        
+      <b>Not In</b>-If a value is not in the inquired list, returns true. Otherwise returns false.<br>    
+      </p>
+    </div>
+  </div>
+  <div class="concept">
+    <div class="concept-title" id="lesson-2-6-5">
+    For Loops
+    </div>
+    <div class="concept-description">
+      <p>
+      For Loops go through each element of a list and executes a block of code on each element, then loops back to the next element in the list. After the last element in the list, the for loop is complete and Python goes to the next line of code. 
+      </p>
+    </div>
+  </div> 
+</div>  
+
+<div class="lesson">
+  <h2 id="lesson-2-7">Lesson 7: How to Solve Problems</h2>
+  <div class="concept">
+    <div class="concept-title" id="lesson-2-7-1">
+    What do Problems Have in Common?
+    </div>
+    <div class="concept-description">
+      <p>        
+      All computational problems have in common <em>inputs</em> and <em>outputs</em>. Problem are defined by possible inputs, usually an infinite set, and a relationship between the inputs ⇒ and desired outputs. A <em>solution</em> will be a procedure that can take any input from the set and produce a desired output that satisfies the relationship we want.     
+      </p>
+    </div>
+  </div>      
+  <div class="concept">
+    <div class="concept-title" id="lesson-2-7-2">
+    Rules to Help Solve Problems 
+    </div>
+    <div class="concept-description">
+      <p>
+      <b>What are the inputs?</b> What is the set of valid inputs? How are the inputs represented?<br><br>
+        
+      <b>What are the outputs?</b> How should we specify the outputs? Note if we <em>return</em> an output, we can do further computations with the output. If we <em>print</em> the output it’s hard to do anything else with the output.<br><br>
+        
+      <b>Work through some examples by hand.</b> Maybe start with “pseudo code” on paper. Figure out how to map the inputs to the correct outputs. Try to figure out the relationship between the two.<br><br>
+        
+      <b>Simple mechanical solution.</b> Consider systematically how a human can solve the problem on paper. Don’t optimize prematurely, try a simpler method first. Try to breakdown the problem.<br><br> 
+        
+      <b>Develop incrementally and test as you go.</b> Write small bits of code that can be tested as you go.  
+      </p>
+    </div>
+  </div>
+</div>  
+
+</body>
+    
+    
+    
+    
+    
+  </body>
+</html>
